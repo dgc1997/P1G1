@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Avance4</title>
+</head>
+<body>
+<button onclick="EjercicioUno()">
+    Ejercicio Uno -> ((10 > 5) || ( (15 == 6) && false ))
+    </button>
+<button onclick="EjercicioDos()">
+    Ejercicio Dos
+    </button>
+<button onclick="EjercicioTres()">
+    Ejercicio Tres
+    </button>
+<script>
+//Ejercicio 1 .- ((10 > 5) || ( (15 == 6) && false ))
+//               (( True ) || ( (false)   && false ))
+//               (  true   ||         false         )
+//               (              true                ) 
+function EjercicioUno(){
+    if((10 > 5) || ( (15 == 6) && false )){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+//Ejercicio 2 .- ( (5 == 5) || (10 < 9) ) && ( (5 > 5) && (0 != 1) )
+//               ( ( true ) || (false ) ) && ( (false) && (true  ) )
+//               ( (       true         ) && (        false        )
+//               (                        false                    )
+function EjercicioDos(){
+    if( (5 == 5) || (10 < 9) ) && ( (5 > 5) && (0 != 1) ){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+
+//Ejercicio 3 .- ( (7 => 7) && (false == true) ) && (8 > 9)
+//               ( (true  ) && (   false     ) ) && (false)
+//               (           false           ) ) && (false)
+//               (                false                   )
+
+function EjercicioTres(){
+    if( (7 => 7) && (false == true) ) && (8 > 9){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+</script>
+
+</body>
+</html>
