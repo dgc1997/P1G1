@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dado tres numeros A, B y C. Determinar cual es numero mayor</title>
+</head>
+<body>
+    <script>
+        
+        let A, B, C, mayor;
+        
+        A = parseInt(prompt("Ingrese el primer numero"));
+        B = parseInt(prompt("Ingrese el segundo numero"));
+        C = parseInt(prompt("Ingrese el tercer numero"));
+        if(A >= B && A >= C){
+            mayor = A;
+        }else if(B >= A && B >= C){
+            mayor = B;
+        }else{
+            mayor = C;
+        }
+        alert("El numero mayor es: " + mayor);
+
+    </script>
+    
+</body>
+</html>
