@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    type="text/javascript"
+    src="code.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Programación 1</title>
+</head>
+<body>
+
+    <h1>CALCULADORA ESTÁNDAR</h1>
+    <table border="1px">
+        <tr>
+            <td colspan="4">
+                <input id="resultado"
+                type="text" placeholder="0">
+            </td>
+        </tr>
+        <tr>
+            <td><button onclick="factorial()">factorial</button></td>
+            <td><button onclick="potencia()">potencia</button></td>
+            <td><button onclick="borrar()">borrar</button></td>
+            <td><button onclick="dividir()">dividir</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="numero(7)">7</button></td>
+            <td><button onclick="numero(8)">8</button></td>
+            <td><button onclick="numero(9)">9</button></td>
+            <td><button onclick="multiplicar()">multiplicar</button></td>           
+        </tr>
+        <tr>
+            <td><button onclick="numero(4)">4</button></td>
+            <td><button onclick="numero(5)">5</button></td>
+            <td><button onclick="numero(6)">6</button></td>
+            <td><button onclick="restar()">restar</button></td>            
+        </tr>
+        <tr>
+            <td><button onclick="numero(1)">1</button></td>
+            <td><button onclick="numero(2)">2</button></td>
+            <td><button onclick="numero(3)">3</button></td>
+            <td><button onclick="sumar()">sumar</button></td>            
+        </tr>
+        <tr>
+            <td><button onclick="inverso()">+/-</button></td>
+            <td><button onclick="numero(0)">0</button></td>
+            <td><button onclick="MOD()">MOD</button></td>
+            <td><button onclick="igual()">igual</button></td>            
+        </tr>
+    </table>
+
+    <h1>Pablo Ignacio Camacho Gutierrez</h1>
+    <h2>1.- Determinar el valor del factorial de un número N</h2>
+    <button onclick="factorialN()">Factorial</button>
+    
+    <h2>2.- Dados A y B, determinar cuál es el mayor</h2>
+    <button onclick="mayorAyB()">Mayor A y B</button>
+    
+    <h2>3.- Dados A y B, determinar cuál es el menor</h2>
+    <button onclick="menorAyB()">Menor A y B</button>
+    
+    <h2>4.- Dado A y B, obtener el DIV</h2>
+    <button onclick="obtenerDiv()">DIV A y B</button>
+    
+    <h2>5.- Dado A y B, obtener el MOD</h2>
+    <button onclick="obtenerMod()">MOD A y B</button>
+    
+    <h2>6.- Retornar la cantidad de dígitos que tiene el número N</h2>
+    <button onclick="digitosN()">Número dígitos N</button>
+    
+    <h2>7.- Retornar los dígitos que tiene el número N</h2>
+    <button onclick="retornarDigitosN()">Retornar dígitos N</button>
+    
+    <h2>8.- Mostrar si existe el 3 en el número N</h2>
+    <button onclick="mostrarTres()">Mostrar 3</button>
+    
+    <h2>9.- Calcular el área y perímetro de un trapecio</h2>
+    <button onclick="areaPerimetroTrapecio()">Área y Perímetro Trapecio</button>
+    
+    <h2>10.- Determinar si N es par o impar</h2>
+    <button onclick="NParOImpar()">N par o impar</button>
+    
+    <h2>11.- IF normal</h2>
+    <button onclick="ifNormal()">IF Normal</button>
+    
+    <h2>12.- IF abreviado</h2>
+    <button onclick="ifAbreviado()">IF Abreviado</button>
+    
+    <h2>13.- Retornar la cantidad de dígitos que tiene el número N usando FOR</h2>
+    <button onclick="digitosNFOR()">Número dígitos N FOR</button>
+    
+    <h2>14.- Retornar dígitos impares de un número N</h2>
+    <button onclick="digitosImpares()">Dígitos impares</button>
+    
+    <h2>14.- Sumatoria del 1 al 10</h2>
+    <button onclick="sumatoria1a10()">Sumatoria</button>
+    
+    <h2>15.- Calcular el área y volumen de un cilindro</h2>
+    <button onclick="areaVolumenCilindro()">Área y Volumen Cilindro</button>
+    
+    <h2>15.- Retornar si un número es positivo, negativo o neutro</h2>
+    <button onclick="mostrarNumPosNeg()">Positivo, Negativo o Neutro</button>
+    
+    <h2>16.- Dado A y B, mostrar el número que sea menor</h2>
+    <button onclick="mostrarNumMenor()">Menor de A y B</button>
+    
+    <h2>17.- Determinar si N es mútiplo de M</h2>
+    <button onclick="NmultiploDeM()">N múltiplo de M</button>
+    
+    <h2>18.- Sumar todos los dígitos múltiplos de 3 de un número N</h2>
+    <button onclick="sumatoriaMultiplosTres()">Sumatoria Múltiplos de 3</button>
+    
+    <h2>19.- Sumar los números entre A y B incluidos A y B</h2>
+    <button onclick="sumAyBInclusivo()">Sumatoria entre A y B inclusivo</button>
+    
+    <h2>20.- Calcular el promedio de N notas</h2>
+    <button onclick="promedioNnotas()">Promedio N Notas</button>
+    
+    <h2>21.- Ejemplo de FUNCIÓN con return</h2>
+    <button onclick="funcionConReturn()">Función Return</button>
+
+    <h2>22.- calcular N potencia de P</h2>
+    <button onclick="NpotenciadeP()">calcular N potencia de P</button>
+
+    <h2>22.- calcular N potencia de P</h2>
+    <button onclick="NpotenciadePconParametros()">calcular N potencia de P con parametros</button>
+
+    <h1>String</h1>  
+    <h2>23.- Obtener el caracter de una cadena dada una posicion</h2>
+    <button onclick="GetCharByPosition()">Obtener el caracter de una cadena dada una posicion</button>
+
+    <h2>23.- Unir dos cadenas de texto</h2>
+    <button onclick="JoinTwoString()">Unir dos cadenas de texto</button>
+
+    <h2>24.- Obtener la frecuencia de la letra 'a' en una cadena</h2>
+    <button onclick="GetFrecuencyOfChar()">Obtener la frecuencia de la letra 'a' en una cadena</button>
+
+    <h2>25.- Mi nombre en ASCII</h2>
+    <button onclick="MynameinASCII()">Mi nombre en ASCII</button>
+
+    <h2>26.- Mostrar el abecedario</h2>
+    <button onclick="Mostrarabecedario()">Mostrar el abecedario</button>
+
+    <h2>26.- Contar la cantidad de vocales que tiene una palabra</h2>
+    <button onclick="ContarVocales()">Contar la cantidad de vocales que tiene una palabra</button>
+
+    <h2>26.- Contar la cantidad de palabras en una cadena</h2>
+    <button onclick="ContarPalabras()">Contar la cantidad de palabras en una cadena</button>
+
+    <br><br><br><br><br>
+
+</body>
+</html>
